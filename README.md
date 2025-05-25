@@ -51,8 +51,6 @@ For more training commands, please check the docs in [BasicSR](https://github.co
 ```python
 ### Test ###
 ### EGANet for Lightweight Image Super-Resolution ###
-python basicsr/test.py -opt ./options/test/EGANet/test_eganet_x2.yml  # ×2
-python basicsr/test.py -opt ./options/test/EGANet/test_eganet_x3.yml  # ×3
 python basicsr/test.py -opt ./options/test/EGANet/test_eganet_x4.yml  # ×4
 
 ### EGANet for Large Image Super-Resolution ###
