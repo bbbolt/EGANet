@@ -65,4 +65,4 @@ The inference results on benchmark datasets will be available at [Google Drive](
 
 ## :mailbox:Contact
 
-If you have any questions, please feel free to contact us wqabby@xupt.edu.cn and [bolttt@stu.xupt.edu.cn](mailto:bolttt@stu.xupt.edu.cn).
+If you have any questions, please feel free to contact us wqabby@xupt.edu.cn and [freedomwwjj@stu.xupt.edu.cn](mailto:bolttt@stu.xupt.edu.cn).
