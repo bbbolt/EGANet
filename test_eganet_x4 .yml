@@ -1,0 +1,85 @@
+name: test_eganet_x4
+model_type: SRModel
+scale: 4
+num_gpu: auto  # set num_gpu: 0 for cpu mode
+manual_seed: 0
+
+datasets:
+  test_1:
+    name: Set5
+    type: PairedImageDataset
+    dataroot_gt: testsets/Set5/HRmod4
+    dataroot_lq: testsets/Set5/LRbicx4
+    filename_tmpl: '{}'
+    io_backend:
+      type: disk
+  test_2:
+    name: Set14
+    type: PairedImageDataset
+    dataroot_gt: testsets/Set14/HRmod4
+    dataroot_lq: testsets/Set14/LRbicx4
+    filename_tmpl: '{}'
+    io_backend:
+      type: disk
+  test_3:
+    name: BSDS100
+    type: PairedImageDataset
+    dataroot_gt: testsets/BSDS100/HRmod4
+    dataroot_lq: testsets/BSDS100/LRbicx4
+    filename_tmpl: '{}'
+    io_backend:
+      type: disk
+  test_4:
+    name: Urban100
+    type: PairedImageDataset
+    dataroot_gt: testsets/Urban100/HRmod4
+    dataroot_lq: testsets/Urban100/LRbicx4
+    filename_tmpl: '{}'
+    io_backend:
+      type: disk
+  test_5:
+    name: Manga109
+    type: PairedImageDataset
+    dataroot_gt: testsets/Manga109/HRmod4
+    dataroot_lq: testsets/Manga109/LRbicx4
+    filename_tmpl: '{}'
+    io_backend:
+      type: disk
+
+# network structures
+network_g:
+  type: EGANet
+  upscale: 4
+  in_chans: 3
+  dim: 48
+  groups: 3
+  blocks: 3
+  num_heads: 6
+  kernel_size: 7
+  ffn_ratio: 2.
+  tlc_flag: true
+  tlc_kernel: 48
+  body_norm: false
+  img_range: 1.
+  upsampler: 'pixelshuffledirect'
+
+# path
+path:
+  pretrain_network_g: ~
+  strict_load_g: true
+  param_key_g: params_ema
+
+# validation settings
+val:
+  save_img: true
+  suffix: ~  # add suffix to saved images, if None, use exp name
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 4
+      test_y_channel: true
+    ssim:
+      type: calculate_ssim
+      crop_border: 4
+      test_y_channel: true
