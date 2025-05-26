@@ -55,13 +55,13 @@ python basicsr/test.py -opt ./options/test/EGANet/test_eganet_x4.yml  # ×4
 
 ### EGANet for Large Image Super-Resolution ###
 ### Flicker2K  Test2K  Test4K  Test8K ###
-python basicsr/test.py -opt ./options/test/EGANet/test_act_large.yml  # large image
+python basicsr/test.py -opt ./options/test/EGANet/test_eganet_large.yml  # large image
 
 ```
 
 ## 🚩Results
 
-The inference results on benchmark datasets will be available at [Google Drive](https://drive.google.com/file/d).
+Stay tuned.
 
 ## :mailbox:Contact
 
