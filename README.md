@@ -66,4 +66,7 @@ Stay tuned.
 ## :mailbox:Contact
 
 If you have any questions, please feel free to contact us wqabby@xupt.edu.cn and [freedomwwjj@stu.xupt.edu.cn](mailto:bolttt@stu.xupt.edu.cn).
-![img_001](https://github.com/user-attachments/assets/7ce7e828-03fd-4256-87bb-a614ec0e9c91)
+
+![image](https://github.com/user-attachments/assets/c37aaf6d-d4b5-4ab2-954e-d0e9d5a33b8c)
+![image](https://github.com/user-attachments/assets/f9818f55-643f-4b7b-a8c8-ab554c582b4b)
+
